@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color:rgb(163, 163, 163);
+}
+
+.container{
+    
+    height: 450px;
+    width: 430px;
+    background-color: #fff;
+    border-radius:5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#taskInput::placeholder{
+    color:#fff;
+    padding-left: 10px;
+}
+
+#taskInput{
+height: 50px;
+width: 90%;
+outline: none;
+border:none;
+border-radius:5px;
+background:#666;
+color:#fff;
+padding: 0 10px;
+margin:15px;
+}
+
+
+ul li {
+    background:#eee;
+    color: #333;
+    height: 40px;
+    border-radius:50px;
+    margin: 10px 0;
+    width: 380px;
+    padding-left: 20px;
+    padding: 10px;
+    position: relative;
+}
+
+ul{
+    padding-left: 10px;
+}
+
+ul .fa-check, .fa-trash{
+    position: absolute;
+    cursor: pointer;
+}
+
+ul .fa-check{
+    right: 40px;
+    color:green;
+}
+
+ul .fa-trash{
+    right: 15px;
+    color:#ff0033;
+}
+
+ul .checked{
+    background:lightgreen;
+    text-decoration: line-through;
+}
+
+.container h1{
+    margin-left: 135px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
